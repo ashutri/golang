@@ -16,8 +16,7 @@ func TestValidation(t *testing.T) {
 
 	if Validation(test) {
 		t.Errorf("Expected ”%s” to be invalid according to the Luhn algorithm", test)
-	}
-	
+	}	
 	
 	//test case to check fail
 	
