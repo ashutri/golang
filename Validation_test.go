@@ -4,16 +4,16 @@ import (
 	"testing"
 )
 
-func TestValid(t *testing.T) {
-	test := "1111111116"
+func TestValidation(t *testing.T) {
+	test := "379354508162306"
 
-	if !Valid(test) {
+	if !Validation(test) {
 		t.Errorf("Expected ”%s” to be valid according to the Luhn algorithm", test)
 	}
 
-	test = "1111111111"
+	test = "4388576018402626"
 
-	if Valid(test) {
+	if Validation(test) {
 		t.Errorf("Expected ”%s” to be invalid according to the Luhn algorithm", test)
 	}
 }
